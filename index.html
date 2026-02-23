@@ -104,17 +104,6 @@
   .svc-body { font-size:13px; line-height:1.75; color:var(--grey); font-weight:300; transition:color 0.3s; }
   .svc:hover .svc-body { color:rgba(244,241,234,0.7); }
 
-  /* ── APPROACH ── */
-  #approach { padding:100px 0; background:var(--jade); }
-  .approach-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; }
-  .approach-quote { font-family:'Cormorant Garamond',serif; font-weight:300; font-style:italic; font-size:clamp(24px,2.8vw,36px); color:var(--cream); line-height:1.5; }
-  .approach-quote strong { font-weight:600; font-style:normal; color:var(--gold); }
-  .approach-points { display:flex; flex-direction:column; gap:28px; }
-  .ap { display:flex; gap:18px; align-items:flex-start; }
-  .ap-num { width:34px; height:34px; flex-shrink:0; border:1px solid rgba(140,122,79,0.4); display:flex; align-items:center; justify-content:center; font-family:'Cormorant Garamond',serif; font-size:15px; color:var(--gold); }
-  .ap h4 { font-family:'Cormorant Garamond',serif; font-weight:500; font-size:18px; color:var(--cream); margin-bottom:5px; }
-  .ap p { font-size:13px; line-height:1.7; color:rgba(244,241,234,0.6); font-weight:300; }
-
   /* ── CONTACT ── */
   #contact { padding:100px 0; background:var(--warm-white); }
   .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; }
@@ -303,55 +292,16 @@
   </div>
 </section>
 
-<!-- APPROACH -->
-<section id="approach">
-  <div class="section-inner">
-    <div class="approach-grid">
-      <div>
-        <p class="approach-quote">"Most BD problems in professional services firms are not strategy problems. They are <strong>execution problems</strong> — and solving them requires someone who understands how these businesses actually operate."</p>
-      </div>
-      <div class="approach-points">
-        <div class="ap">
-          <div class="ap-num">1</div>
-          <div>
-            <h4>You work with Edwina directly</h4>
-            <p>Every engagement is led by Edwina — not briefed out to a junior. If that matters to you, it matters here too.</p>
-          </div>
-        </div>
-        <div class="ap">
-          <div class="ap-num">2</div>
-          <div>
-            <h4>No standard packages</h4>
-            <p>Engagements are scoped around what is actually needed — whether that is a defined project, ongoing advisory, interim coverage, or a combination.</p>
-          </div>
-        </div>
-        <div class="ap">
-          <div class="ap-num">3</div>
-          <div>
-            <h4>Asia Pacific is the focus</h4>
-            <p>Not a market visited occasionally. Edwina has lived and worked in Melbourne and Singapore and supported professional services firms across the region for nearly two decades.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- CONTACT -->
 <section id="contact">
   <div class="section-inner">
     <div class="contact-grid">
       <div class="contact-left">
         <p class="eyebrow">Get in touch</p>
-        <h2 class="heading">Let's talk about<br><em>your firm</em></h2>
-        <p>If you would like to explore whether Sullivan Jade Advisory is the right fit for your firm, reach out directly. The first conversation is always straightforward and without obligation.</p>
-        <div class="contact-consult">
-          <p><strong>Complimentary 30-minute consultation available.</strong> A direct conversation about your firm, your challenges, and whether there is a good fit.</p>
-        </div>
+        <h2 class="heading">Work with<br><em>Edwina</em></h2>
         <div class="cdetails">
-          <div><div class="cd-l">Email</div><a href="/cdn-cgi/l/email-protection#1c79786b75727d5c6f697070756a7d72767d78797d786a756f736e65327f7371327d69" class="cd-v"><span class="__cf_email__" data-cfemail="50353427393e311023253c3c3926313e3a31343531342639233f22297e333f3d7e3125">[email&#160;protected]</span></a></div>
+          <div><div class="cd-l">Email</div><a id="cemail" href="#" class="cd-v">edwina&#64;sullivanjadeadvisory.com.au</a></div>
           <div><div class="cd-l">LinkedIn</div><a href="https://www.linkedin.com/in/edwinasullivan81/" class="cd-v" target="_blank">Edwina Sullivan</a></div>
-          <div><div class="cd-l">Location</div><span class="cd-v" style="cursor:default">Melbourne, Australia</span></div>
         </div>
       </div>
       <div class="cform">
@@ -360,7 +310,11 @@
           <div class="fg"><label>Last name</label><input type="text" placeholder="Smith"></div>
         </div>
         <div class="fg"><label>Firm / Organisation</label><input type="text" placeholder="Smith &amp; Partners"></div>
-        <div class="fg"><label>Email address</label><input type="email" placeholder="jane@smithpartners.com.au"></div>
+        <div class="fg"><label>Job Title</label><input type="text" placeholder="Head of Business Development"></div>
+        <div class="form-row">
+          <div class="fg"><label>Email address</label><input type="email" placeholder="jane@smithpartners.com.au"></div>
+          <div class="fg"><label>Phone</label><input type="tel" placeholder="+61 4xx xxx xxx"></div>
+        </div>
         <div class="fg">
           <label>How can I help?</label>
           <select>
