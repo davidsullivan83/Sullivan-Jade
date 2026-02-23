@@ -24,7 +24,7 @@
   body { font-family:'Jost',sans-serif; font-weight:300; background:var(--warm-white); color:var(--charcoal); overflow-x:hidden; }
 
   /* ── NAV ── */
-  nav { position:fixed; top:0; left:0; right:0; z-index:200; padding:28px 64px; display:flex; justify-content:space-between; align-items:center; transition:all 0.4s ease; }
+  nav { position:fixed; top:0; left:0; right:0; z-index:200; padding:28px 64px; display:flex; justify-content:space-between; align-items:center; transition:all 0.4s ease; background:rgba(244,241,234,0.92); backdrop-filter:blur(12px); border-bottom:1px solid rgba(140,122,79,0.1); }
   nav.scrolled { background:rgba(250,249,246,0.97); backdrop-filter:blur(12px); padding:18px 64px; border-bottom:1px solid rgba(140,122,79,0.12); }
   .nav-wordmark { text-decoration:none; }
   .nav-wordmark-main { font-family:'Cormorant Garamond',serif; font-weight:500; font-size:20px; color:var(--jade); display:block; line-height:1; }
@@ -42,11 +42,11 @@
   #hero { min-height:100vh; background:var(--cream); display:flex; align-items:center; position:relative; overflow:hidden; }
   #hero::before { content:''; position:absolute; right:-180px; top:50%; transform:translateY(-50%); width:640px; height:640px; border-radius:50%; border:1px solid rgba(140,122,79,0.1); pointer-events:none; }
   #hero::after { content:''; position:absolute; right:-60px; top:50%; transform:translateY(-50%); width:440px; height:440px; border-radius:50%; border:1px solid rgba(140,122,79,0.07); pointer-events:none; }
-  .hero-inner { max-width:1080px; margin:0 auto; padding:140px 48px 80px; width:100%; position:relative; z-index:1; }
+  .hero-inner { max-width:1080px; margin:0 auto; padding:160px 48px 100px; width:100%; position:relative; z-index:1; }
   .hero-content { max-width:640px; }
   .hero-tag { display:inline-flex; align-items:center; gap:12px; font-size:10px; letter-spacing:0.32em; text-transform:uppercase; color:var(--gold); margin-bottom:32px; opacity:0; animation:fadeIn 1s 0.2s ease forwards; }
   .hero-tag::before { content:''; width:28px; height:1px; background:var(--gold); }
-  .hero-h1 { font-family:'Cormorant Garamond',serif; font-weight:300; font-size:clamp(48px,6vw,88px); color:var(--jade); line-height:1.0; margin-bottom:32px; opacity:0; animation:fadeIn 1s 0.4s ease forwards; }
+  .hero-h1 { font-family:'Cormorant Garamond',serif; font-weight:300; font-size:clamp(40px,4.5vw,68px); color:var(--jade); line-height:1.05; margin-bottom:32px; opacity:0; animation:fadeIn 1s 0.4s ease forwards; }
   .hero-h1 em { font-style:italic; color:var(--gold); }
   .hero-body { font-size:17px; line-height:1.85; color:var(--grey); font-weight:300; max-width:520px; margin-bottom:48px; opacity:0; animation:fadeIn 1s 0.6s ease forwards; }
   .hero-actions { display:flex; align-items:center; gap:32px; opacity:0; animation:fadeIn 1s 0.8s ease forwards; }
