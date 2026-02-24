@@ -304,20 +304,22 @@
           <div><div class="cd-l">LinkedIn</div><a href="https://www.linkedin.com/in/edwinasullivan81/" class="cd-v" target="_blank">Edwina Sullivan</a></div>
         </div>
       </div>
-      <div class="cform">
+      <form class="cform" name="enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
+        <input type="hidden" name="form-name" value="enquiry">
+        <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
         <div class="form-row">
-          <div class="fg"><label>First name</label><input type="text" placeholder="Jane"></div>
-          <div class="fg"><label>Last name</label><input type="text" placeholder="Smith"></div>
+          <div class="fg"><label for="first-name">First name</label><input id="first-name" name="first-name" type="text" placeholder="Jane" required></div>
+          <div class="fg"><label for="last-name">Last name</label><input id="last-name" name="last-name" type="text" placeholder="Smith" required></div>
         </div>
-        <div class="fg"><label>Firm / Organisation</label><input type="text" placeholder="Smith &amp; Partners"></div>
-        <div class="fg"><label>Job Title</label><input type="text" placeholder="Head of Business Development"></div>
+        <div class="fg"><label for="firm">Firm / Organisation</label><input id="firm" name="firm" type="text" placeholder="Smith &amp; Partners"></div>
+        <div class="fg"><label for="job-title">Job Title</label><input id="job-title" name="job-title" type="text" placeholder="Head of Business Development"></div>
         <div class="form-row">
-          <div class="fg"><label>Email address</label><input type="email" placeholder="jane@smithpartners.com.au"></div>
-          <div class="fg"><label>Phone</label><input type="tel" placeholder="+61 4xx xxx xxx"></div>
+          <div class="fg"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="jane@smithpartners.com.au" required></div>
+          <div class="fg"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" placeholder="+61 4xx xxx xxx"></div>
         </div>
         <div class="fg">
-          <label>How can I help?</label>
-          <select>
+          <label for="service">How can I help?</label>
+          <select id="service" name="service">
             <option value="" disabled selected>Select a service area</option>
             <option>Fractional BD Leadership</option>
             <option>Interim Support</option>
@@ -327,13 +329,12 @@
             <option>Marketing &amp; Communications</option>
             <option>Events</option>
             <option>Training &amp; Development</option>
-            <option>Complimentary 30-minute consultation</option>
             <option>General enquiry</option>
           </select>
         </div>
-        <div class="fg"><label>Message</label><textarea placeholder="Tell me about your firm and what you are looking to achieve..."></textarea></div>
-        <button class="btn-submit" onclick="alert('Thank you — Edwina will be in touch shortly.')">Send message &nbsp;→</button>
-      </div>
+        <div class="fg"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell me about your firm and what you are looking to achieve..."></textarea></div>
+        <button type="submit" class="btn-submit">Send message &nbsp;→</button>
+      </form>
     </div>
   </div>
 </section>
