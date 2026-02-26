@@ -299,9 +299,11 @@
           <div><div class="cd-l">LinkedIn</div><a href="https://www.linkedin.com/in/edwinasullivan81/" class="cd-v" target="_blank">Edwina Sullivan</a></div>
         </div>
       </div>
-      <form class="cform" name="enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
-        <input type="hidden" name="form-name" value="enquiry">
-        <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
+      <form class="cform" method="POST" action="https://api.web3forms.com/submit">
+        <input type="hidden" name="access_key" value="752c7a93-6707-4d72-8a38-ab73c1aa5e71">
+        <input type="hidden" name="subject" value="New enquiry — Sullivan Jade Advisory">
+        <input type="hidden" name="redirect" value="https://sullivanjadeadvisory.com.au">
+        <input type="checkbox" name="botcheck" style="display:none">
         <div class="form-row">
           <div class="fg"><label for="first-name">First name</label><input id="first-name" name="first-name" type="text" placeholder="Jane" required></div>
           <div class="fg"><label for="last-name">Last name</label><input id="last-name" name="last-name" type="text" placeholder="Smith" required></div>
