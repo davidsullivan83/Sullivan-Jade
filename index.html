@@ -112,8 +112,8 @@
   .svc-cat-title { font-family:'Cormorant Garamond',serif; font-weight:500; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:18px; display:flex; align-items:center; gap:16px; }
   .svc-cat-title::after { content:''; flex:1; height:1px; background:rgba(140,122,79,0.2); }
   .svc-grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
-  .svc-grid-2 { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
-  .svc { padding:32px 28px; background:var(--warm-white); border-bottom:2px solid transparent; border:1px solid rgba(42,84,73,0.07); transition:all 0.3s; }
+  .svc-grid-2 { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+  .svc { padding:28px 28px; background:var(--warm-white); border:1px solid rgba(42,84,73,0.09); border-left:3px solid var(--gold); transition:all 0.3s; }
   .svc:hover { background:var(--jade); border-bottom-color:var(--gold); transform:translateY(-3px); box-shadow:0 10px 28px rgba(42,84,73,0.1); }
   .svc-title { font-family:'Cormorant Garamond',serif; font-weight:500; font-size:18px; color:var(--jade); margin-bottom:10px; line-height:1.2; transition:color 0.3s; }
   .svc:hover .svc-title { color:var(--cream); }
@@ -225,12 +225,10 @@
 <!-- SERVICES -->
 <section id="services">
   <div class="section-inner">
-    <div class="services-intro">
-      <div>
-        <p class="eyebrow">How we can help</p>
-        <h2 class="heading">Services</h2>
-      </div>
-      <p class="services-desc">Every engagement is different. Some firms need strategic direction. Others need hands-on delivery, interim leadership, or a trusted sounding board. Sullivan Jade Advisory adapts to what you actually need, not a packaged solution.</p>
+    <div style="margin-bottom:48px;">
+      <p class="eyebrow">How we can help</p>
+      <h2 class="heading" style="margin-bottom:16px;">Services</h2>
+      <p style="font-size:15.5px; line-height:1.85; color:var(--grey); font-weight:300; max-width:640px;">Every engagement is different. Some firms need strategic direction. Others need hands-on delivery, interim leadership, or a trusted sounding board. Sullivan Jade Advisory adapts to what you actually need, not a packaged solution.</p>
     </div>
     <div class="svc-categories">
       <div class="svc-grid-2">
