@@ -289,7 +289,7 @@
         <p class="eyebrow">Get in touch</p>
         <h2 class="heading">Work with<br><em>Edwina</em></h2>
         <div class="cdetails">
-          <div><div class="cd-l">Email</div><a id="cemail" href="#" class="cd-v">edwina&#64;sullivanjadeadvisory.com.au</a></div>
+          <div><div class="cd-l">Email</div><a id="cemail" href="mailto:edwina@sullivanjadeadvisory.com.au" class="cd-v">edwina&#64;sullivanjadeadvisory.com.au</a></div>
           <div><div class="cd-l">LinkedIn</div><a href="https://www.linkedin.com/in/edwinasullivan81/" class="cd-v" target="_blank">Edwina Sullivan</a></div>
         </div>
       </div>
@@ -346,4 +346,12 @@
   </div>
 </footer>
 
-<script data-
+<script>
+  var nav = document.getElementById('nav');
+  window.addEventListener('scroll', function () {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  });
+</script>
+
+</body>
+</html>
