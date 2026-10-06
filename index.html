@@ -120,6 +120,17 @@
   .svc-body { font-size:13px; line-height:1.75; color:var(--grey); font-weight:300; transition:color 0.3s; }
   .svc:hover .svc-body { color:rgba(244,241,234,0.7); }
 
+  /* ── BD PARTNER ── */
+  #bd-partner { padding:100px 0; background:var(--gold-light); }
+  .bdp-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; }
+  .bdp-intro .heading { margin-bottom:24px; }
+  .bdp-lead { font-family:'Cormorant Garamond',serif; font-style:italic; font-size:22px; line-height:1.4; color:var(--gold); margin-bottom:20px; }
+  .bdp-intro p.bdp-body { font-size:15.5px; line-height:1.85; color:var(--grey); font-weight:300; }
+  .bdp-points { list-style:none; display:flex; flex-direction:column; gap:14px; margin-bottom:36px; }
+  .bdp-point { padding:22px 26px; background:var(--warm-white); border:1px solid rgba(42,84,73,0.09); border-left:3px solid var(--gold); }
+  .bdp-point-title { font-family:'Cormorant Garamond',serif; font-weight:500; font-size:18px; color:var(--jade); margin-bottom:4px; line-height:1.2; }
+  .bdp-point-body { font-size:13.5px; line-height:1.7; color:var(--grey); font-weight:300; }
+
   /* ── CONTACT ── */
   #contact { padding:100px 0; background:var(--warm-white); }
   .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; }
@@ -166,7 +177,7 @@
     .stat-sep { display:none; }
     .about-grid { grid-template-columns:1fr; gap:48px; }
     .about-img-wrap { max-width:400px; margin:0 auto; }
-    .career-grid,.services-intro,.approach-grid,.contact-grid { grid-template-columns:1fr; gap:44px; }
+    .career-grid,.services-intro,.approach-grid,.bdp-grid,.contact-grid { grid-template-columns:1fr; gap:44px; }
     .svc-grid-3,.svc-grid-2 { grid-template-columns:1fr; }
     .footer-inner { flex-direction:column; gap:20px; text-align:center; }
     .footer-links { flex-wrap:wrap; justify-content:center; }
@@ -183,6 +194,7 @@
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
+    <li><a href="#bd-partner">Your BD Partner</a></li>
     <li><a href="#contact" class="nav-cta">Get in touch</a></li>
   </ul>
 </nav>
@@ -247,6 +259,28 @@
   </div>
 </section>
 
+<!-- BD PARTNER -->
+<section id="bd-partner">
+  <div class="section-inner">
+    <div class="bdp-grid">
+      <div class="bdp-intro">
+        <p class="eyebrow">Ongoing support</p>
+        <h2 class="heading">Your BD Partner</h2>
+        <p class="bdp-lead">Business development and marketing support that fits around your practice.</p>
+        <p class="bdp-body">Our flexible, outsourced support is ideal for sole practitioners, boutique firms and growing practices that don't have in-house BD support. Our monthly retainer gives you a dedicated business development and marketing specialist who works alongside you, keeping your profile, relationships and pipeline moving along.</p>
+      </div>
+      <div>
+        <ul class="bdp-points">
+          <li class="bdp-point"><h3 class="bdp-point-title">Consistent, not stop-start</h3><p class="bdp-point-body">Steady progress every month.</p></li>
+          <li class="bdp-point"><h3 class="bdp-point-title">Fixed monthly fee</h3><p class="bdp-point-body">Tailored to your priorities and budget.</p></li>
+          <li class="bdp-point"><h3 class="bdp-point-title">Flexible</h3><p class="bdp-point-body">Scale up or down as your practice changes.</p></li>
+        </ul>
+        <a href="mailto:edwina@sullivanjadeadvisory.com.au?subject=Your%20BD%20Partner%20enquiry" class="btn-primary">Contact Edwina &nbsp;→</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section id="contact">
   <div class="section-inner">
@@ -305,6 +339,7 @@
     <ul class="footer-links">
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
+      <li><a href="#bd-partner">Your BD Partner</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <p class="footer-copy">© 2026 Sullivan Jade Advisory &nbsp;|&nbsp; ABN 96 978 948 976</p>
