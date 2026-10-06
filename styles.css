@@ -102,7 +102,7 @@
   .fnd-section { padding:100px 0; }
   .fnd-section.alt { background:var(--cream); }
   .fnd-section.tint { background:var(--gold-light); }
-  .fnd-intro { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; }
+  .fnd-intro { display:flex; flex-direction:column; gap:56px; max-width:720px; }
   .fnd-text p { font-size:15.5px; line-height:1.85; color:var(--grey); font-weight:300; margin-bottom:16px; }
   .fnd-text p:last-child { margin-bottom:0; }
   .fnd-who { list-style:none; display:flex; flex-direction:column; gap:14px; margin-top:28px; }
@@ -165,7 +165,7 @@
     .stat-sep { display:none; }
     .about-grid { grid-template-columns:1fr; gap:48px; }
     .about-img-wrap { max-width:400px; margin:0 auto; }
-    .career-grid,.services-intro,.approach-grid,.bdp-grid,.fnd-intro,.contact-grid { grid-template-columns:1fr; gap:44px; }
+    .career-grid,.services-intro,.approach-grid,.bdp-grid,.contact-grid { grid-template-columns:1fr; gap:44px; }
     .page-hero { padding:120px 0 64px; }
     .fnd-section { padding:72px 0; }
     .fnd-offers,.svc-grid-3,.svc-grid-2 { grid-template-columns:1fr; }
